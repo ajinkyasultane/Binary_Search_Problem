@@ -27,14 +27,14 @@ public class Ceiling_Number {
             else if(target > arr[mid])
             {
                 start = start+1;
-            } else
+            } else if (target == arr[mid])
             {
             return mid;
             }
 
         }
 
-       return end;
+       return start;
     }
 
 
